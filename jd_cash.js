@@ -4,6 +4,11 @@
 活动入口：京东APP搜索领现金进入
 已支持IOS双京东账号,Node.js支持N个京东账号
 脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
+
+自行添加变量设置邀请码 格式如下 默认10个
+export cashinviteCode="eU9YarjmN_l0-GaDzHIVgA"
+export cashinviteCode2="eU9YEIzvIL9XlTmXuAhW"
+export cashinviteCode3="eU9YEIzvIL9XlTmXuAhW"
 ============Quantumultx===============
 [task_local]
 #签到领现金
@@ -68,7 +73,11 @@ if (process.env.cashinviteCode9) {
 if (process.env.cashinviteCode10) {
   cashinviteCode10 = process.env.cashinviteCode10;
 }
+<<<<<< panghu999-patch-1
 newShareCodes = [{"inviteCode":`${cashinviteCode}`},{"inviteCode":`${cashinviteCode2}`},{"inviteCode":`${cashinviteCode3}`}] //这里自己增加变量 默认可以10个
+=======
+newShareCodes = [{"inviteCode":`${cashinviteCode}`},{"inviteCode":`${cashinviteCode2}`},{"inviteCode":`${cashinviteCode3}`},{"inviteCode":`${cashinviteCode4}`},{"inviteCode":`${cashinviteCode5}`},{"inviteCode":`${cashinviteCode6}`},{"inviteCode":`${cashinviteCode7}`},{"inviteCode":`${cashinviteCode8}`},{"inviteCode":`${cashinviteCode9}`},{"inviteCode":`${cashinviteCode10}`}] //这里修改你的邀请码
+>>>>>> master
 if ($.isNode()) {
   Object.keys(jdCookieNode).forEach((item) => {
     cookiesArr.push(jdCookieNode[item])
