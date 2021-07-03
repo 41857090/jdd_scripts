@@ -73,7 +73,11 @@ if (process.env.cashinviteCode9) {
 if (process.env.cashinviteCode10) {
   cashinviteCode10 = process.env.cashinviteCode10;
 }
+<<<<<< panghu999-patch-1
+newShareCodes = [{"inviteCode":`${cashinviteCode}`},{"inviteCode":`${cashinviteCode2}`},{"inviteCode":`${cashinviteCode3}`}] //这里自己增加变量 默认可以10个
+=======
 newShareCodes = [{"inviteCode":`${cashinviteCode}`},{"inviteCode":`${cashinviteCode2}`},{"inviteCode":`${cashinviteCode3}`},{"inviteCode":`${cashinviteCode4}`},{"inviteCode":`${cashinviteCode5}`},{"inviteCode":`${cashinviteCode6}`},{"inviteCode":`${cashinviteCode7}`},{"inviteCode":`${cashinviteCode8}`},{"inviteCode":`${cashinviteCode9}`},{"inviteCode":`${cashinviteCode10}`}] //这里修改你的邀请码
+>>>>>> master
 if ($.isNode()) {
   Object.keys(jdCookieNode).forEach((item) => {
     cookiesArr.push(jdCookieNode[item])
